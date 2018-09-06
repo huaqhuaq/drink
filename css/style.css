@@ -1,0 +1,425 @@
+html,body {
+	padding: 0;
+	margin: 0;
+	font-family: "微软雅黑";
+	width: 100%;
+	/*height: 100%;*/
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+header,footer,section,main {
+	display: block;
+}
+button,input {
+    outline: 0;
+    border: none;
+    background-color: transparent;
+}
+button {
+	-webkit-appearance: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+label {
+	display: block;
+	font-weight: normal;
+	margin-bottom: 0;
+}
+ul,li {
+	list-style: none;
+}
+ul,li,h1,h2,h3,h4,h5,h6,p {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+a,a:hover {
+	text-decoration: none;
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+*,*:before,*:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html,body,header,footer {
+	max-width: 720px;
+	width: 100%;
+	margin: 0 auto;
+}
+body {
+	background: #f0eff5;
+	padding-bottom: 54px;
+}
+/*topbar*/
+.topbar {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 44px;
+	background: #1d8fef;
+	z-index: 1;
+}
+.topbar .back {
+	width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.topbar .back img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.topbar .title {
+	font-size: 20px;
+	color: #fff;
+	line-height: 44px;
+	text-align: center;
+	padding: 0 20px;
+}
+main {
+	overflow: hidden;
+	margin-top: 44px;
+}
+
+/*user-wrap*/
+.user-wrap {
+	width: 100%;
+	height: 115px;
+	background: #b1d9fc;
+	padding: 10px;
+}
+.user-avatar {
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	float: left;
+}
+.user-info {
+	overflow: hidden;
+	color: #041d53;
+	padding-left: 10px;
+	height: 90px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.user-name {
+	font-size: 20px;
+}
+.user-rank {
+	padding-left: 10px;
+}
+.user-rank,.user-section {
+	font-size: 14px;
+}
+.user-num {
+	font-size: 18px;
+}
+/*form*/
+.form {
+	background: #fff;
+	margin: 10px;
+	padding: 10px;
+}
+.form-group + .form-group {
+	margin-top: 5px;
+}
+.form-label {
+	display: block;
+	font-size: 14px;
+	color: #999;
+	line-height: 24px;
+}
+.form-control {
+	height: 44px;
+	position: relative;
+}
+.arrow {
+	position: absolute;
+	right: 10px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: 24px;
+	height: 24px;
+}
+.form-field {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.form-field,
+.radiobox {
+	padding: 5px 10px;
+	width: 100%;
+	height: 44px;
+	background: #f0eff5;
+	border-radius: 10px;
+	font-size: 16px;
+	line-height: 34px;
+	color: #111;
+}
+.promise {
+	font-size: 12px;
+	color: #666;
+	text-align: center;
+}
+.btn {
+	display: block;
+	width: 100%;
+	height: 44px;
+	background: #1d8fef;
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+	line-height: 44px;
+	border-radius: 4px;
+}
+.btn:focus,
+.btn:active {
+	background: #60b0f4;
+}
+
+.datetimepicker {
+	position: fixed;
+}
+.datetimepicker table th {
+	font-size: 16px;
+}
+.datetimepicker table td {
+	font-size: 14px;
+}
+
+/*layer*/
+.mask {
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.3);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9;
+}
+.layer {
+	width: 80%;
+	background: #fff;
+	border-radius: 10px;
+	padding: 10px;
+}
+.radiobox {
+	text-align: center;
+}
+.radiobox input[type=radio] {
+	display: none;
+}
+#timeLayer,
+#reasonLayer,
+#placeLayer {
+	display: none;
+}
+/*footer*/
+footer {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 49px;
+	background: #fff;
+}
+.navbar {
+	width: 100%;
+	height: 49px;
+	display: flex;
+}
+.navbar-inner {
+	flex: 1;
+	display: block;
+	text-align: center;
+}
+.navbar-icon {
+	width: 24px;
+	height: 24px;
+	display: block;
+	margin: 5px auto 0;
+}
+.navbar-text {
+	display: block;
+	font-size: 12px;
+	color: #999;
+	line-height: 20px;
+}
+.navbar-text.active {
+	color: #1d8fef;
+}
+/*record*/
+.record {
+	width: 100%;
+	background: #fff;
+	padding: 5px 10px;
+	margin-top: 5px;
+}
+.record-title {
+	font-size: 14px;
+	color: #111;
+	line-height: 21px;
+	margin-bottom: 5px;
+}
+.record-notice,
+.record-tel li {
+	float: left;
+	font-size: 14px;
+	color: #666;
+	line-height: 21px;
+	margin-right: 10px;
+}
+.record-tel {
+	overflow: hidden;
+}
+.record-time {
+	font-size: 12px;
+	color: #999;
+	text-align: right;
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 769px) {
+	body {
+		padding-bottom: 1.08rem;
+	}
+	.topbar {
+		height: 0.88rem;
+	}
+	.topbar .back {
+		width: 0.48rem;
+	    height: 0.48rem;
+	    left: 0.3rem;
+	}
+	.topbar .title {
+		font-size: 0.4rem;
+		line-height: 0.88rem;
+		padding: 0 0.4rem;
+	}
+	main {
+		margin-top: 0.88rem;
+	}
+	.user-wrap {
+		width: 100%;
+		height: 2.3rem;
+		padding: 0.2rem;
+	}
+	.user-avatar {
+		width: 1.8rem;
+		height: 1.8rem;
+	}
+	.user-info {
+		padding-left: 0.2rem;
+		height: 1.8rem;
+	}
+	.user-name {
+		font-size: 0.4rem;
+	}
+	.user-rank {
+		padding-left: 0.2rem;
+	}
+	.user-rank,.user-section {
+		font-size: 0.28rem;
+	}
+	.user-num {
+		font-size: 0.36rem;
+	}
+	/*form*/
+	.form {
+		margin: 0.2rem;
+		padding: 0.2rem;
+	}
+	.form-group + .form-group {
+		margin-top: 0.1rem;
+	}
+	.form-label {
+		font-size: 0.28rem;
+		line-height: 0.48rem;
+	}
+	.form-control {
+		height: 0.88rem;
+	}
+	.arrow {
+		right: 0.2rem;
+		width: 0.48rem;
+		height: 0.48rem;
+	}
+	.form-field,
+	.radiobox  {
+		padding: 0.1rem 0.2rem;
+		height: 0.88rem;
+		font-size: 0.32rem;
+		line-height: 0.68rem;
+	}
+	.promise {
+		font-size: 0.24rem;
+	}
+	.btn {
+		width: 100%;
+		height: 0.88rem;
+		font-size: 0.36rem;
+		line-height: 0.88rem;
+	}
+	.datetimepicker {
+		top: auto!important;
+		bottom: 0;
+	}
+	/*layer*/
+	.layer {
+		padding: 0.2rem;
+	}
+	/*footer*/
+	footer,
+	.navbar {
+		height: 0.98rem;
+	}
+	.navbar-icon {
+		width: 0.48rem;
+		height: 0.48rem;
+		margin: 0.1rem auto 0;
+	}
+	.navbar-text {
+		font-size: 0.12rem;
+		line-height: 0.4rem;
+	}
+	/*record*/
+	.record {
+		padding: 0.1rem 0.2rem;
+		margin-top: 0.1rem;
+	}
+	.record-title {
+		font-size: 0.28rem;
+		line-height: 0.42rem;
+		margin-bottom: 0.1rem;
+	}
+	.record-notice,
+	.record-tel li {
+		font-size: 0.28rem;
+		line-height: 0.42rem;
+		margin-right: 0.2rem;
+	}
+	.record-time {
+		font-size: 0.24rem;
+	}
+}
+
